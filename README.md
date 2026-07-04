@@ -18,10 +18,14 @@ SaaS apps.
 
 ```bash
 bun install
+bun run db:push
 bun run dev
 ```
 
 Open `http://localhost:5173`.
+
+Run `bun run db:generate` after changing `db/schema.ts` to create a checked-in
+migration.
 
 ## Auth
 

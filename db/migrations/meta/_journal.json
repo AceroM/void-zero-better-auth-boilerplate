@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1783147784130,
+      "tag": "20260704064944_tired_gamora",
+      "breakpoints": true
+    }
+  ]
+}
