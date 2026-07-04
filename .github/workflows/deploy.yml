@@ -1,0 +1,19 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: "22"
+          cache: true
+      - run: vp exec void deploy
+        env:
+          VOID_TOKEN: ${{ secrets.VOID_TOKEN }}
+          VOID_PROJECT: ${{ secrets.VOID_PROJECT }}

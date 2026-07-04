@@ -1,0 +1,8 @@
+node_modules
+dist
+.void
+.wrangler
+.env.local
+.env.production.local
+.DS_Store
+porio-agents

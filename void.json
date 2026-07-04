@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/void/schema.json",
+  "auth": {
+    "providers": ["email"]
+  },
+  "head": {
+    "titleTemplate": "%s | Void Auth Boilerplate",
+    "htmlAttrs": {
+      "lang": "en"
+    },
+    "meta": [
+      {
+        "charset": "utf-8"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "description",
+        "content": "A Void app boilerplate with Better Auth email/password auth."
+      }
+    ],
+    "link": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg"
+      }
+    ]
+  },
+  "worker": {
+    "compatibility_date": "2025-12-01",
+    "compatibility_flags": ["nodejs_compat"]
+  }
+}
